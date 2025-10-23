@@ -12,7 +12,7 @@
 
 <body>
 	<div class="cont col">
-		<div class="cont col" style="width:45rem">
+		<div class="cont col" id="body">
 			<h1 class="cont" style="position: relative;">
 				Logan Rave
 				<img id="profile" class="previewable" src="https://avatars.githubusercontent.com/u/64157688?v=4" />
@@ -225,6 +225,11 @@
 		content: "✦ ";
 	}
 
+	#body {
+		width: 45rem;
+		max-width: 80%;
+	}
+
 	#profile {
 		position: absolute;
 		left: calc(-10rem);
@@ -246,7 +251,9 @@
 
 	.link:active,
 	.link:hover,
-	.link:visited {
+	.link:visited,
+	.link:link,
+	.link:focus {
 		color: var(--fg);
 	}
 
